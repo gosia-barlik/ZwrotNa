@@ -176,6 +176,9 @@ h3 {
   font-size: 24px;
   line-height: 1.08;
 }
+.hero__accent {
+  color: var(--pink);
+}
 .hero__lead {
   font-size: 17px;
   line-height: 1.6;
@@ -190,9 +193,9 @@ h3 {
 }
 .hero__photo-wrap {
   position: absolute;
-  inset: 18px 110px 0 30px;
+  /* inset: 18px 110px 0 30px; */
   margin: 0;
-  border-radius: 46% 46% 14% 48%/48% 36% 34% 40%;
+  /* border-radius: 46% 46% 14% 48%/48% 36% 34% 40%; */
   overflow: hidden;
 }
 .hero__photo {
