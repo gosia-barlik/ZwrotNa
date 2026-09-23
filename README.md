@@ -1,16 +1,31 @@
-# Fundacja ZwrotNa — projekt frontendu
+# Fundacja ZwrotNa - doradztwo zawodowe
 
-Starter statycznej strony przygotowany na podstawie zaakceptowanego mockupu.
+Statyczna, responsywna strona przygotowana w HTML, CSS i JavaScript. Nie wymaga instalowania bibliotek ani budowania projektu.
+
+## Najprostsze uruchomienie
+
+Otwórz plik `index.html` w przeglądarce.
+
+## Uruchomienie przez lokalny serwer
+
+W terminalu przejdź do folderu projektu i uruchom jedną z poniższych komend:
+
+```bash
+python -m http.server 8000
+```
+
+lub, jeżeli masz Node.js:
+
+```bash
+npx serve .
+```
 
 ## Struktura
 - `index.html` — homepage
 - `styles.css` — wspólne style i responsywność
 - `script.js` — menu mobilne, animacje wejścia, automatyczny rok w stopce
-- `assets/` — logo, zdjęcia wycięte z przekazanego mockupu, ikony SVG oraz obraz referencyjny
-- `pages/` — przygotowane placeholdery pod dalszą rozbudowę: O fundacji, Oferta, Publikacje, Projekty, Kontakt, Polityka prywatności
+- `assets/` — logo, zdjęcia, ikony SVG, pdfy
 
-## Uruchomienie
-Najprościej otworzyć `index.html` w przeglądarce. Przy dalszej pracy wygodniej użyć Live Server w VS Code.
 
 ## Ważne przed publikacją
 - Podmień dane adresowe i telefon w stopce (`index.html`).
