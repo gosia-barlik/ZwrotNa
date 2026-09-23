@@ -519,7 +519,7 @@ h3 {
   transform: none;
 }
 .subpage-hero {
-  padding: 92px 0 72px;
+  padding: 62px 0 72px;
   background: var(--cream-2);
 }
 .subpage-hero h1 {
@@ -542,21 +542,37 @@ h3 {
 }
 .project-detail__header {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 360px;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 400px);
   gap: 28px;
   align-items: center;
+  max-width: 920px;
 }
 .project-detail__intro {
   display: grid;
-  gap: 12px;
+  gap: 10px;
+  min-width: 0;
+}
+.project-detail__title {
+  display: grid;
+  gap: 10px;
+  margin: 0;
 }
 .project-detail__kicker {
   margin: 0;
-  color: var(--pink);
-  letter-spacing: 0.15em;
+  color: var(--pink-dark);
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
+  line-height: 1.5;
+}
+.project-detail__title-main {
+  display: block;
+  font-family: "Libre Caslon Display", Georgia, serif;
+  font-size: clamp(32px, 4vw, 52px);
+  line-height: 1.05;
+  color: var(--ink);
+  letter-spacing: -0.025em;
 }
 .project-detail__date {
   color: var(--muted);
@@ -565,10 +581,14 @@ h3 {
 }
 .project-detail__figure {
   margin: 0;
+  justify-self: start;
+  width: min(100%, 380px);
   border: 1px solid var(--line);
   background: #fff;
-  box-shadow: var(--shadow);
   padding: 10px;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
 }
 .project-detail__figure img {
   width: 100%;
@@ -579,25 +599,28 @@ h3 {
   max-width: 920px;
   display: grid;
   gap: 28px;
+  /* border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.55); */
+  padding: 28px 12px;
 }
 .project-detail__section {
-  background: rgba(255, 255, 255, 0.6);
-  border: 1px solid var(--line);
-  padding: 28px 30px;
+  display: grid;
+  gap: 12px;
 }
 .project-detail__section h2 {
   font-size: clamp(28px, 3vw, 38px);
-  margin-bottom: 18px;
+  margin: 0;
 }
 .project-detail__section p,
 .project-detail__section li {
   color: var(--text);
   font-size: 17px;
   line-height: 1.7;
+  margin: 0;
 }
 .project-detail__section ul {
   padding-left: 20px;
-  margin: 18px 0;
+  margin: 0;
 }
 .project-detail__section strong {
   color: var(--ink);
