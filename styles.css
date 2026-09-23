@@ -1,10 +1,10 @@
 :root {
   --pink: #c71978;
   --pink-dark: #9f105e;
-  --steel-blue: #b8cddf;
+  --steel-blue: #c7daec;
   --sand: #e1d9cd;
-  --cream: #fbf7f3;
-  --cream-2: #f6f0eb;
+  --cream: #fcfaf7;
+  --cream-2: #f0eeeb;
   --white: #fff;
   --ink: #211d22;
   --text: #5f585e;
@@ -269,7 +269,7 @@ h3 {
   background: #fffdfb;
 }
 .section--tinted {
-  background: #f6f0eb;
+  background: var(--cream-2);
 }
 .about-grid {
   display: grid;
@@ -365,7 +365,6 @@ h3 {
   display: grid;
   place-items: center;
   background: var(--steel-blue);
-  fill: var(--pink);
   margin-bottom: 24px;
 }
 .icon-badge img {
@@ -413,6 +412,7 @@ h3 {
   font-size: 11px;
   font-weight: 600;
   letter-spacing: 0.04em;
+  margin-bottom: 12px;
 }
 .card-link {
   margin-top: 18px;
@@ -520,7 +520,7 @@ h3 {
 }
 .subpage-hero {
   padding: 92px 0 72px;
-  background: #f6f0eb;
+  background: var(--cream-2);
 }
 .subpage-hero h1 {
   font-size: clamp(50px, 6vw, 76px);
@@ -542,7 +542,7 @@ h3 {
   width: 100%;
   padding: 32px;
   border: 1px solid var(--line);
-  border-radius: 20px;
+  border-radius: 1px;
   background: #fff;
 }
 .publication-date {
@@ -554,7 +554,7 @@ h3 {
 }
 .publication-entry h3 {
   margin: 0 0 18px;
-  font-size: clamp(28px, 3vw, 36px);
+  font-size: clamp(24px, 2.5vw, 32px);
   line-height: 1.1;
 }
 .publication-cover {
@@ -576,7 +576,8 @@ h3 {
   width: 100%;
   max-width: 180px;
   height: auto;
-  border-radius: 12px;
+  margin-top: 24px;
+  border: 1px solid var(--line);
 }
 .publication-entry p,
 .publication-entry a {
@@ -593,9 +594,9 @@ h3 {
   justify-content: center;
   min-height: 44px;
   padding: 0 18px;
-  border: 1px solid var(--pink);
-  border-radius: 999px;
-  background: var(--white);
+  border: 0.5px solid var(--pink);
+  border-radius: 1px;
+  background: transparent;
   color: var(--pink);
   text-decoration: none;
   font-weight: 600;
